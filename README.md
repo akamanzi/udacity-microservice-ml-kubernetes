@@ -62,3 +62,15 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
   4. deploy with kubernetes: `./run_kubernetes.sh ## assumes image is already uploaded to dockerhub`  
   5. make predictions: `./make_prediction.sh`
 
+### Project files description
+
+* `app.py`: Contains code that run the prediction model
+* `Dockerfile`: Contains instructions to contenarize the app. 
+* `Makefile`: Defines a set of instructions to run using `make`. two of the instructions used are: `lint` and `install`
+* `make_prediction.sh`: This file queries the model with some input data to make predicions
+* `requirements.txt`: includes project dependencies
+* `run_docker.sh`: script that runs the dockerised app
+* `run_kubernetes.sh`: script that setups and runs the app with kubernetes 
+* `uplaod_docker.sh`: script that uplaods local app docker image to docker hub
+
+
